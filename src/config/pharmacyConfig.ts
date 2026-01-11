@@ -1,125 +1,55 @@
-/**
- * PHARMACY CONFIGURATION FILE
- * 
- * This is the SINGLE SOURCE OF TRUTH for the pharmacy website.
- * Update these values when setting up a new pharmacy website.
- * 
- * =====================================================
- * HOW TO SET UP A NEW PHARMACY:
- * =====================================================
- * 1. Update ALL values in this file
- * 2. Replace these image files (keep the same file names!):
- *    - src/assets/logo.png      → Pharmacy logo
- *    - src/assets/hero.png      → Hero background image
- *    - src/assets/gallery-1.png → Gallery image 1
- *    - src/assets/gallery-2.png → Gallery image 2
- *    - src/assets/gallery-3.png → Gallery image 3
- *    - public/favicon.png       → Browser tab icon
- * 3. Update index.html meta tags (title, description)
- * =====================================================
- */
+// Pharmacy Configuration File
+// Update this file to customize the pharmacy website
 
 export const pharmacyConfig = {
-  // ===== PHARMACY NAME =====
   name: {
-    en: "Apollo Pharmacy",
-    el: "Φαρμακείο Απόλλων",
+    en: "Test",
+    el: "Client 1"
   },
-  subtitle: {
-    en: "Pharmacy",
-    el: "Φαρμακείο",
-  },
-
-  // ===== CONTACT INFORMATION =====
-  phone: "99 123456",
-  email: "apollo@pharmacy.cy",
-  
-  // ===== ADDRESS =====
-  // Full address as a single string for display
-  address: "123 Main Street, Limassol 3000, Cyprus",
-  mapsLink: "https://maps.google.com/?q=123+Main+Street,+Limassol,+Cyprus,+3000",
-
-  // ===== SOCIAL MEDIA =====
-  // Set to empty string "" to hide the icon
+  phone: "01787586100",
+  email: "p.ioannou@hyperiosoftware.com",
+  address: "ESWD Intelligente CY74578239",
+  mapsLink: "https://www.google.com/maps/place/Happy+Valley+Veterinary+Clinic+%26+Pet+Hotel/@34.6950629,32.9324966,15z/data=!4m6!3m5!1s0x14e7303bca1f9e53:0xfff149157b395c7!8m2!3d34.6802295!4d32.9296691!16s%2Fg%2F1td8n40d?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D",
   social: {
-    facebook: "https://www.facebook.com/apollopharmacy",
-    instagram: "", // e.g., "https://www.instagram.com/apollopharmacy"
+    facebook: "",
+    instagram: ""
   },
-
-  // ===== WOLT DELIVERY =====
-  // Set to empty string "" to hide the Wolt icon
-  wolt: "", // e.g., "https://wolt.com/en/cyp/limassol/restaurant/pharmacy-name"
-
-  // ===== BUSINESS HOURS =====
+  wolt: "",
   hours: {
     en: {
-      monFri: "Mon–Fri: 8 AM–1:30 PM, 3–6:30 PM",
-      sat: "Sat: 8 AM–1:30 PM",
-      sun: "Sun: Closed",
-      monFriLabel: "Monday – Friday",
-      monFriTime1: "8 AM – 1:30 PM",
-      monFriTime2: "3 – 6:30 PM",
-      satLabel: "Saturday",
-      satTime: "8 AM – 1:30 PM",
-      sunLabel: "Sunday",
-      sunTime: "Closed",
+      mondayFridayMorning: "8:00 AM – 1:30 PM",
+      mondayFridayAfternoon: "3:00 PM – 6:30 PM",
+      saturday: "8:00 AM – 1:30 PM",
+      sunday: "Closed"
     },
     el: {
-      monFri: "Δευ–Παρ: 08:00–13:30, 15:00–18:30",
-      sat: "Σάββατο: 08:00–13:30",
-      sun: "Κυριακή: Κλειστά",
-      monFriLabel: "Δευτέρα – Παρασκευή",
-      monFriTime1: "08:00 – 13:30",
-      monFriTime2: "15:00 – 18:30",
-      satLabel: "Σάββατο",
-      satTime: "08:00 – 13:30",
-      sunLabel: "Κυριακή",
-      sunTime: "Κλειστά",
-    },
+      mondayFridayMorning: "8:00 π.μ. – 1:30 μ.μ.",
+      mondayFridayAfternoon: "3:00 μ.μ. – 6:30 μ.μ.",
+      saturday: "8:00 π.μ. – 1:30 μ.μ.",
+      sunday: "Κλειστό"
+    }
   },
-
-  // ===== GALLERY ALT TEXT =====
-  // Update these to describe YOUR gallery images
   gallery: {
     alt1: {
-      en: "Pharmacy storefront",
-      el: "Πρόσοψη φαρμακείου",
+      en: "Pharmacy exterior view",
+      el: "Εξωτερική όψη φαρμακείου"
     },
     alt2: {
       en: "Pharmacy interior",
-      el: "Εσωτερικό φαρμακείου",
+      el: "Εσωτερικός χώρος φαρμακείου"
     },
     alt3: {
-      en: "Product display",
-      el: "Προϊόντα",
-    },
+      en: "Product shelves",
+      el: "Ράφια προϊόντων"
+    }
   },
-
-  // ===== META / SEO =====
-  // These should also be updated in index.html
   meta: {
-    titleEn: "Apollo Pharmacy",
-    titleEl: "Φαρμακείο Απόλλων",
-    descriptionEn: "Apollo Pharmacy - Expert care for every family in Cyprus.",
-    descriptionEl: "Φαρμακείο Απόλλων - Εξειδικευμένη φροντίδα για κάθε οικογένεια στην Κύπρο.",
-    twitterHandle: "@ApolloPharmacy",
-  },
-
-  // ===== STANDARD IMAGE PATHS (for reference) =====
-  // These are the standard file names - just replace the files, don't change paths
-  images: {
-    logo: "@/assets/logo.png",
-    hero: "@/assets/hero.png",
-    gallery1: "@/assets/gallery-1.png",
-    gallery2: "@/assets/gallery-2.png",
-    gallery3: "@/assets/gallery-3.png",
-    favicon: "/favicon.png",
-    gesyLogo: "@/assets/gesy-logo.png",
-    woltIcon: "@/assets/wolt-icon.png",
-  },
+    titleEn: "Test | Pharmacy",
+    titleEl: "Client 1 | Φαρμακείο",
+    descriptionEn: "Test - Your trusted pharmacy in Cyprus. Quality pharmaceutical products and professional healthcare services.",
+    descriptionEl: "Client 1 - Το έμπιστο φαρμακείο σας στην Κύπρο. Ποιοτικά φαρμακευτικά προϊόντα και επαγγελματικές υπηρεσίες υγείας.",
+    twitterHandle: ""
+  }
 };
 
-// Helper to get localized value
-export const getLocalizedValue = <T>(obj: { en: T; el: T }, lang: "en" | "el"): T => {
-  return obj[lang];
-};
+export default pharmacyConfig;
